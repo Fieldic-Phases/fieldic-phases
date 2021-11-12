@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "The Fieldic Phases",
   },
+  pathPrefix: "/fieldic-phases",
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-mdx",
