@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import {PhaseTable} from "../components/phase-table";
 import {epoch, phases} from "../constants";
+import {computePhaseData} from "../compute-phase";
 // styles
 const pageStyles = {
   color: "#232129",
@@ -10,14 +11,10 @@ const pageStyles = {
 };
 
 
-const getCurrentPhase = () => {
-  return phases.odie
-};
-
 // markup
 const IndexPage = () => {
-  const currentPhase = getCurrentPhase();
-  console.log({currentPhase});
+  const currentPhase = phases[computePhaseData(Date.now(), epoch).phaseKey];
+
   return (
     <main style={pageStyles}>
      <h1>The Fieldic Phase</h1>

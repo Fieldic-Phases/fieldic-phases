@@ -34,7 +34,7 @@ export const phases = {
     },
     drliz: {
         image: () => {
-            return <StaticImage src={"./images/liz.jpeg"}/>
+            return <StaticImage src={"./images/drliz.jpeg"}/>
         },
         description: "The Dr Liz Wilson phase",
         title: "Dr. Liz Wilson"
@@ -54,3 +54,34 @@ export const phases = {
         description: "The pookie phase"
     }
 };
+
+export const PHASE = [
+    {
+        key: "garfield",
+        number: 0
+    },
+    {
+        key: "odie",
+        number: 4
+    },
+    {
+        key: "nermal",
+        number: 1
+    },
+    {
+        key: "jon",
+        number: 2
+    },
+    {
+        key: "arlene",
+        number: 3
+    },
+    {
+        key: "drliz",
+        number: 5
+    },
+    {
+        key: "pookie",
+        number: 6
+    }
+];
