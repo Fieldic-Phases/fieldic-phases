@@ -1,0 +1,52 @@
+body {
+    background-image: url("./images/double-bubble-outline.png");
+}
+main {
+    color: #34323d;
+    padding: 11px 96px;
+    font-family: -apple-system, Roboto, sans-serif, serif;
+    margin: 0 auto;
+    max-width: 1200px
+}
+
+main section .gatsby-image-wrapper {
+    max-width: 550px;
+    margin: 50px auto;
+}
+
+main table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #e2e4e6;
+    width: 100%;
+}
+
+main table th, main table td {
+    text-align: left;
+    padding: 8px;
+
+    border-style: solid;
+    border-width: 1px;
+}
+
+main table tr:nth-child(even) {
+    background-color: #bed2d2;
+}
+
+.date-picker {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.date label {
+    padding: 0 10px;
+    font-size: 18px;
+}

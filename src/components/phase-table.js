@@ -24,27 +24,35 @@ export const PhaseTable = () => {
 
     return (
         <>
-            <label for={'start-date'}>From</label>
-            <input
-                type={'date'}
-                id="start-date"
-                value={startDate}
-                min={minDate}
-                onChange={(x) => {
-                    setStartDate(x.target.value);
-                }}
-            />
+            <div className='date-picker'>
+                <div className="date">
+                    <label htmlFor={'start-date'}>From</label>
+                    <input
+                        type={'date'}
+                        id="start-date"
+                        value={startDate}
+                        min={minDate}
+                        onChange={(x) => {
+                            setStartDate(x.target.value);
+                        }}
+                    />
+                </div>
 
-            <label for={'end-date'}>To</label>
-            <input
-                type={'date'}
-                id="end-date"
-                value={endDate}
-                min={startDate}
-                onChange={(x) => {
-                    setEndDate(x.target.value);
-                }}
-            />
+                <div className='date'>
+                    <label htmlFor={'end-date'}>To</label>
+                    <input
+                        type={'date'}
+                        id="end-date"
+                        value={endDate}
+                        min={startDate}
+                        onChange={(x) => {
+                            setEndDate(x.target.value);
+                        }}
+                    />
+                </div>
+            </div>
+
+
 
             <table>
                 <tr>
